@@ -1,0 +1,25 @@
+@startuml
+start
+:Open SBPBS;
+:Enter project and site details;
+:Enter building requirements;
+:Choose preferences;
+if (Required fields valid?) then (Yes)
+ :Calculate plot area;
+ :Analyze site conditions;
+ :Estimate buildable area and cost;
+ :Generate recommendations;
+ :Generate preliminary SVG blueprint;
+ :Display dashboard and results;
+ if (Save project?) then (Yes)
+  :POST project to Spring Boot API;
+  :Persist project and analysis JSON in MySQL;
+  :Show save confirmation;
+ else (No)
+  :Continue without saving;
+ endif
+else (No)
+ :Show validation message;
+endif
+stop
+@enduml

@@ -1,0 +1,13 @@
+# Monday demonstration checklist
+- [ ] MySQL service is running.
+- [ ] `sbpbs_db` database exists.
+- [ ] `mvn spring-boot:run` starts without errors.
+- [ ] `http://localhost:8080/api/health` reports `UP`.
+- [ ] Open site at `http://localhost:8080` (not file://).
+- [ ] Enter sample project, plot dimensions, soil/slope, floors, budget and preferences.
+- [ ] Generate plan; show SVG blueprint, estimated cost and recommendations.
+- [ ] Save project and show it in My Projects.
+- [ ] Run `SELECT id, project_name, area, created_at FROM projects;` in MySQL to prove persistence.
+- [ ] Open one saved project and test delete.
+- [ ] Keep screenshots of successful results for report.
+- [ ] State clearly that the plan is preliminary and not construction-approved.

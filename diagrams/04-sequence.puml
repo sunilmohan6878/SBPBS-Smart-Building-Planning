@@ -1,0 +1,21 @@
+@startuml
+actor User
+participant "Browser UI" as UI
+participant "JavaScript Analysis" as JS
+participant "Spring Boot REST API" as API
+participant "ProjectService" as Service
+database MySQL
+User -> UI: Fill form and Generate Plan
+UI -> JS: getFormData()
+JS -> JS: validate and calculate preliminary analysis
+JS -> UI: Render SVG, dashboard, recommendations
+User -> UI: Save project
+UI -> JS: saveCurrentProject()
+JS -> API: POST /api/projects (JSON)
+API -> Service: create(request)
+Service -> MySQL: INSERT project + analysis_json
+MySQL --> Service: generated ID and row
+Service --> API: ProjectResponse
+API --> JS: 201 Created + saved project
+JS -> UI: Refresh saved projects / toast
+@enduml

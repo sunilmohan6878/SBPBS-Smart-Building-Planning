@@ -1,0 +1,22 @@
+# Java / Maven
+target/
+*.class
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE and operating system
+.idea/
+.vscode/
+.DS_Store
+
+# Logs
+*.log
+
+# Local backup copies
+*.backup
+*.before-*

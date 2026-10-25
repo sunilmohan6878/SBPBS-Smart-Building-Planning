@@ -1,0 +1,17 @@
+@startuml
+node "User Mac / Browser" as client {
+ artifact "index.html" as html
+ artifact "style.css" as css
+ artifact "script.js" as js
+}
+node "Application Host" as app {
+ artifact "SBPBS Spring Boot JAR" as jar
+ component "REST API :8080" as rest
+}
+database "MySQL Server :3306
+sbpbs_db" as mysql
+html -- js
+css .. html
+js --> rest : HTTP/JSON
+rest --> mysql : JDBC
+@enduml

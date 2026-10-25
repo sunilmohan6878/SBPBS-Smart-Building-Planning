@@ -1,0 +1,21 @@
+@startuml
+package "Client" {
+ [HTML Structure] as HTML
+ [CSS Theme] as CSS
+ [JavaScript UI & SVG Blueprint] as JS
+}
+package "Application Server" {
+ [Spring Boot REST Controllers] as API
+ [Project Service] as Service
+ [Rule-based Analysis API] as Analyze
+ [Spring Data JPA Repository] as Repo
+}
+database "MySQL: sbpbs_db" as DB
+HTML --> JS
+CSS ..> HTML
+JS --> API : HTTP/JSON
+API --> Service
+API --> Analyze
+Service --> Repo
+Repo --> DB
+@enduml

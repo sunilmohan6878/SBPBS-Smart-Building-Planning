@@ -1,0 +1,62 @@
+@startuml
+skinparam classAttributeIconSize 0
+class PlanningFormData {
+ +projectName: String
+ +owner: String
+ +location: String
+ +length: double
+ +width: double
+ +unit: String
+ +soil: String
+ +slope: String
+ +road: String
+ +water: String
+ +floors: int
+ +beds: int
+ +baths: int
+ +budget: double
+ +style: String
+ +preferences: Set<String>
+}
+class SiteAnalysis {
+ +plotAreaSqFt: double
+ +assumedBuildableAreaSqFt: double
+ +recommendations: List<String>
+}
+class BuildingAnalysis {
+ +totalBuiltAreaSqFt: double
+ +estimatedCostINR: double
+ +costRatePerSqFt: double
+}
+class BlueprintGenerator { +generateSVG(data, analysis): SVG }
+class RecommendationEngine { +analyzeSite(data): SiteAnalysis
+ +analyzeBuilding(data): BuildingAnalysis
+ +recommend(data): List<String> }
+class ProjectRecord {
+ +id: Long
+ +projectName: String
+ +owner: String
+ +location: String
+ +area: Double
+ +floors: Integer
+ +style: String
+ +analysisJson: String
+ +createdAt: Instant
+}
+class ProjectController { +all()
+ +create(request)
+ +delete(id) }
+class ProjectService { +all()
+ +create(request)
+ +delete(id) }
+interface ProjectRepository { +findAll()
+ +save(project)
+ +deleteById(id) }
+PlanningFormData --> RecommendationEngine
+RecommendationEngine --> SiteAnalysis
+RecommendationEngine --> BuildingAnalysis
+PlanningFormData --> BlueprintGenerator
+ProjectController --> ProjectService
+ProjectService --> ProjectRepository
+ProjectRepository --> ProjectRecord
+@enduml

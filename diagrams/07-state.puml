@@ -1,0 +1,12 @@
+@startuml
+[*] --> Idle
+Idle --> EnteringDetails : Start Planning
+EnteringDetails --> Validating : Generate Plan
+Validating --> EnteringDetails : Invalid input
+Validating --> Analyzing : Valid input
+Analyzing --> BlueprintReady : Analysis and SVG complete
+BlueprintReady --> Saved : Save project succeeds
+BlueprintReady --> BlueprintReady : View / export
+Saved --> BlueprintReady : Open saved project
+Saved --> [*]
+@enduml

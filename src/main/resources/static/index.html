@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SBPBS | Smart Building Planning</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     BACKGROUND EFFECTS
+========================= -->
+
+<div class="stars"></div>
+<div class="nebula nebula-one"></div>
+<div class="nebula nebula-two"></div>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">⌂</span>
+            <span>SBPBS</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#plan" class="nav-link">Plan</a>
+            <a href="#blueprint" class="nav-link">Blueprint</a>
+            <a href="#dashboard" class="nav-link">Dashboard</a>
+            <a href="#projects" class="nav-link">My Projects</a>
+
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+                <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+                <span class="theme-toggle-label">Light</span>
+            </button>
+
+            <button class="auth-nav-btn" id="authButton">
+                Login
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section class="hero section" id="home">
+
+    <div class="hero-content reveal">
+
+        <div class="hero-badge">
+            SMART BUILDING PLANNING SYSTEM
+        </div>
+
+        <h1>
+            Plan Smarter.
+            <span>Build Better.</span>
+        </h1>
+
+        <p class="hero-description">
+            SBPBS is a smart preliminary planning and blueprint suggestion
+            system that analyzes your site and building requirements to
+            generate recommendations and a visual 2D building layout.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn" id="startPlanningBtn">
+                Start Planning
+                <span>→</span>
+            </button>
+
+            <button class="secondary-btn" id="exploreBlueprintBtn">
+                Explore Blueprint
+            </button>
+
+        </div>
+
+        <div class="hero-note">
+            Academic prototype • Rule-based planning • Preliminary visualization
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual reveal">
+
+        <div class="hero-blueprint-card">
+
+            <div class="preview-top">
+                <span>PRELIMINARY PLAN</span>
+                <span class="status-dot"></span>
+            </div>
+
+            <div class="mini-blueprint">
+
+                <div class="mini-room living">
+                    Living
+                </div>
+
+                <div class="mini-room kitchen">
+                    Kitchen
+                </div>
+
+                <div class="mini-room bedroom">
+                    Bedroom
+                </div>
+
+                <div class="mini-room bedroom-two">
+                    Bedroom
+                </div>
+
+                <div class="mini-room bath">
+                    Bath
+                </div>
+
+                <div class="mini-parking">
+                    Parking
+                </div>
+
+            </div>
+
+            <div class="preview-footer">
+                <span>60 × 40 ft</span>
+                <span>2400 sq.ft</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HOME FEATURES
+========================= -->
+
+<section class="features section">
+
+    <div class="section-heading reveal">
+
+        <span class="section-label">CORE CAPABILITIES</span>
+
+        <h2>
+            Everything needed for
+            <span>smart preliminary planning</span>
+        </h2>
+
+        <p>
+            SBPBS combines site analysis, building requirements,
+            recommendations and blueprint visualization into one workflow.
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <article class="feature-card reveal">
+
+            <div class="feature-icon">📍</div>
+
+            <h3>Site Analysis</h3>
+
+            <p>
+                Analyze plot dimensions, soil, slope, road access,
+                water availability and orientation.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card reveal">
+
+            <div class="feature-icon">🏠</div>
+
+            <h3>Building Analysis</h3>
+
+            <p>
+                Evaluate floors, rooms, parking, building type,
+                style and space requirements.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card reveal">
+
+            <div class="feature-icon">🧠</div>
+
+            <h3>Smart Recommendations</h3>
+
+            <p>
+                Generate transparent rule-based recommendations
+                according to the entered requirements.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card reveal">
+
+            <div class="feature-icon">📐</div>
+
+            <h3>2D Blueprint</h3>
+
+            <p>
+                Generate a preliminary visual floor-plan representation
+                using SVG-based drawing.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WORKFLOW
+========================= -->
+
+<section class="workflow section">
+
+    <div class="section-heading reveal">
+
+        <span class="section-label">WORKFLOW</span>
+
+        <h2>
+            From requirements to
+            <span>blueprint</span>
+        </h2>
+
+    </div>
+
+
+    <div class="workflow-grid">
+
+        <div class="workflow-card reveal">
+
+            <div class="workflow-number">01</div>
+
+            <h3>Input</h3>
+
+            <p>
+                Enter project, site and building requirements.
+            </p>
+
+        </div>
+
+
+        <div class="workflow-line"></div>
+
+
+        <div class="workflow-card reveal">
+
+            <div class="workflow-number">02</div>
+
+            <h3>Analyze</h3>
+
+            <p>
+                Analyze site conditions and building requirements.
+            </p>
+
+        </div>
+
+
+        <div class="workflow-line"></div>
+
+
+        <div class="workflow-card reveal">
+
+            <div class="workflow-number">03</div>
+
+            <h3>Recommend</h3>
+
+            <p>
+                Generate planning and sustainability recommendations.
+            </p>
+
+        </div>
+
+
+        <div class="workflow-line"></div>
+
+
+        <div class="workflow-card reveal">
+
+            <div class="workflow-number">04</div>
+
+            <h3>Blueprint</h3>
+
+            <p>
+                Create a preliminary 2D visual building plan.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="section-heading reveal">
+
+        <span class="section-label">ABOUT SBPBS</span>
+
+        <h2>
+            Smart planning for
+            <span>better decisions</span>
+        </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-main reveal">
+
+            <h3>What is SBPBS?</h3>
+
+            <p>
+                The Smart Building Planning and Blueprint Suggestion System
+                is a preliminary planning and decision-support platform.
+                It accepts site and building requirements, performs
+                rule-based analysis and produces recommendations along
+                with a preliminary 2D layout.
+            </p>
+
+            <p>
+                The system is designed as an academic software engineering
+                prototype demonstrating frontend development, Java backend
+                integration, database management, analysis logic and
+                visualization.
+            </p>
+
+        </div>
+
+
+        <div class="about-stack reveal">
+
+            <h3>Technology Stack</h3>
+
+            <div class="tech-list">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>REST API</span>
+                <span>MySQL</span>
+                <span>JUnit</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="about-cards">
+
+        <div class="info-card reveal">
+
+            <h3>Problem</h3>
+
+            <p>
+                Preliminary building planning often requires combining
+                several site and building parameters manually.
+            </p>
+
+        </div>
+
+
+        <div class="info-card reveal">
+
+            <h3>Objective</h3>
+
+            <p>
+                Provide a simple digital platform for preliminary planning,
+                recommendations and visualization.
+            </p>
+
+        </div>
+
+
+        <div class="info-card reveal">
+
+            <h3>Future Scope</h3>
+
+            <p>
+                Backend persistence, advanced optimization, professional
+                verification workflows and improved planning intelligence.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="disclaimer">
+
+        <strong>Important:</strong>
+
+        SBPBS provides preliminary academic planning suggestions only.
+        The generated visualization is not a structural or architectural
+        approval drawing. Professional civil/architectural verification
+        is required before construction.
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PLANNING
+========================= -->
+
+<section class="section planning-section" id="plan">
+
+    <div class="section-heading reveal">
+
+        <span class="section-label">PLANNING WORKSPACE</span>
+
+        <h2>
+            Define your
+            <span>building requirements</span>
+        </h2>
+
+        <p>
+            Enter the information below to generate a preliminary plan.
+        </p>
+
+    </div>
+
+
+    <!-- STEPPER -->
+
+    <div class="stepper" id="stepper">
+
+        <div class="step active">
+            <span>1</span>
+            <p>Project</p>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step">
+            <span>2</span>
+            <p>Site</p>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step">
+            <span>3</span>
+            <p>Building</p>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step">
+            <span>4</span>
+            <p>Preferences</p>
+        </div>
+
+    </div>
+
+
+    <form id="planningForm" class="planning-form">
+
+        <!-- STEP 1 -->
+
+        <div class="form-step active">
+
+            <div class="form-card">
+
+                <div class="form-card-header">
+
+                    <div>
+                        <span class="section-label">STEP 01</span>
+                        <h3>Project Details</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+<div class="input-group">
+
+                        <label for="projectName">
+                            Project Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="projectName"
+                            placeholder="Green Valley Residence"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="owner">
+                            Owner
+                        </label>
+
+                        <input
+                            type="text"
+                            id="owner"
+                            placeholder="Enter owner name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group full">
+
+                        <label for="location">
+                            Location / Address
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Chennai"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- STEP 2 -->
+
+        <div class="form-step">
+
+            <div class="form-card">
+
+                <div class="form-card-header">
+
+                    <div>
+                        <span class="section-label">STEP 02</span>
+                        <h3>Site Details</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label for="length">
+                            Plot Length
+                        </label>
+
+                        <input
+                            type="number"
+                            id="length"
+                            min="1"
+                            placeholder="60"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="width">
+                            Plot Width
+                        </label>
+
+                        <input
+                            type="number"
+                            id="width"
+                            min="1"
+                            placeholder="40"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="unit">
+                            Unit
+                        </label>
+
+                        <select id="unit">
+
+                            <option value="ft">
+                                Feet
+                            </option>
+
+                            <option value="m">
+                                Metres
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Setback inputs use the same unit selected above -->
+                    <div class="input-group">
+                        <label for="leftSetback">Left Setback</label>
+                        <input type="number" id="leftSetback" min="0" step="any" value="0" placeholder="0">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="rightSetback">Right Setback</label>
+                        <input type="number" id="rightSetback" min="0" step="any" value="0" placeholder="0">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="frontSetback">Front Setback</label>
+                        <input type="number" id="frontSetback" min="0" step="any" value="0" placeholder="0">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="rearSetback">Rear Setback</label>
+                        <input type="number" id="rearSetback" min="0" step="any" value="0" placeholder="0">
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="area">
+                            Plot Area
+                        </label>
+
+                        <input
+                            type="number"
+                            id="area"
+                            placeholder="Auto calculated"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="soil">
+                            Soil Type
+                        </label>
+
+                        <select id="soil">
+
+                            <option value="Loamy">Loamy</option>
+                            <option value="Clay">Clay</option>
+                            <option value="Sandy">Sandy</option>
+                            <option value="Rocky">Rocky</option>
+                            <option value="Black">Black Soil</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="slope">
+                            Site Slope
+                        </label>
+
+                        <select id="slope">
+
+                            <option value="Flat">Flat</option>
+                            <option value="Gentle">Gentle</option>
+                            <option value="Moderate">Moderate</option>
+                            <option value="Steep">Steep</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="road">
+                            Road Availability
+                        </label>
+
+                        <select id="road">
+
+                            <option value="Available">
+                                Available
+                            </option>
+
+                            <option value="Limited">
+                                Limited
+                            </option>
+
+                            <option value="None">
+                                None
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="water">
+                            Water Availability
+                        </label>
+
+                        <select id="water">
+
+                            <option value="Available">
+                                Available
+                            </option>
+
+                            <option value="Limited">
+                                Limited
+                            </option>
+
+                            <option value="None">
+                                None
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="direction">
+                            Site Direction
+                        </label>
+
+                        <select id="direction">
+
+                            <option value="North">North</option>
+                            <option value="South">South</option>
+                            <option value="East">East</option>
+                            <option value="West">West</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="location-box">
+
+                    <div>
+
+                        <h4>Site Coordinates</h4>
+
+                        <p>
+                            Optional location coordinates for project reference.
+                        </p>
+
+                    </div>
+
+
+                    <div class="coordinate-grid">
+
+                        <div class="input-group">
+
+                            <label for="latitude">
+                                Latitude
+                            </label>
+
+                            <input
+                                type="text"
+                                id="latitude"
+                                placeholder="13.0827"
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="longitude">
+                                Longitude
+                            </label>
+
+                            <input
+                                type="text"
+                                id="longitude"
+                                placeholder="80.2707"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="outline-btn"
+                        id="useLocationBtn"
+                    >
+                        📍 Use Current Location
+                    </button>
+
+                </div>
+
+
+                <!-- IMAGE UPLOAD -->
+
+                <div class="upload-box">
+
+                    <div class="upload-content">
+
+                        <div class="upload-icon">
+                            🖼️
+                        </div>
+
+                        <h4>Site Images</h4>
+
+                        <p>
+                            Upload site photographs for project reference.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="outline-btn"
+                            id="uploadBtn"
+                        >
+                            Upload Images
+                        </button>
+
+                        <input
+                            type="file"
+                            id="siteImages"
+                            accept="image/*"
+                            multiple
+                            hidden
+                        >
+
+                    </div>
+
+
+                    <div
+                        class="image-preview-grid"
+                        id="imagePreviewGrid"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- STEP 3 -->
+
+        <div class="form-step">
+
+            <div class="form-card">
+
+                <div class="form-card-header">
+
+                    <div>
+                        <span class="section-label">STEP 03</span>
+                        <h3>Building Requirements</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label for="type">
+                            Building Type
+                        </label>
+
+                        <select id="type">
+
+                            <option value="Residential">
+                                Residential
+                            </option>
+
+                            <option value="Commercial">
+                                Commercial
+                            </option>
+
+                            <option value="Mixed">
+                                Mixed Use
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="floors">
+                            Number of Floors
+                        </label>
+
+                        <input
+                            type="number"
+                            id="floors"
+                            min="1"
+                            max="10"
+                            value="2"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="beds">
+                            Bedrooms
+                        </label>
+
+                        <input
+                            type="number"
+                            id="beds"
+                            min="0"
+                            value="3"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="baths">
+                            Bathrooms
+                        </label>
+
+                        <input
+                            type="number"
+                            id="baths"
+                            min="0"
+                            value="2"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="parking">
+                            Parking
+                        </label>
+
+                        <select id="parking">
+
+                            <option value="Required">
+                                Required
+                            </option>
+
+                            <option value="Not Required">
+                                Not Required
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="budget">
+                            Budget (₹)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="budget"
+                            min="0"
+                            placeholder="2500000"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group full">
+
+                        <label for="style">
+                            Building Style
+                        </label>
+
+                        <select id="style">
+
+                            <option value="Modern">
+                                Modern
+                            </option>
+
+                            <option value="Minimal">
+                                Minimal
+                            </option>
+
+                            <option value="Traditional">
+                                Traditional
+                            </option>
+
+                            <option value="Eco">
+                                Eco Friendly
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- STEP 4 -->
+
+        <div class="form-step">
+
+            <div class="form-card">
+
+                <div class="form-card-header">
+
+                    <div>
+                        <span class="section-label">STEP 04</span>
+                        <h3>Additional Preferences</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="checkbox-grid">
+
+                    <label class="check-card">
+
+                        <input
+                            type="checkbox"
+                            id="solar"
+                        >
+
+                        <span>
+                            ☀️
+                            <strong>Solar Power</strong>
+                            <small>Solar energy integration</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-card">
+
+                        <input
+                            type="checkbox"
+                            id="garden"
+                        >
+
+                        <span>
+                            🌱
+                            <strong>Garden</strong>
+                            <small>Outdoor green area</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-card">
+
+                        <input
+                            type="checkbox"
+                            id="terrace"
+                        >
+
+                        <span>
+                            🏡
+                            <strong>Terrace</strong>
+                            <small>Terrace utilization</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-card">
+
+                        <input
+                            type="checkbox"
+                            id="accessibility"
+                        >
+
+                        <span>
+                            ♿
+                            <strong>Accessibility</strong>
+                            <small>Accessible planning</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-card">
+
+                        <input
+                            type="checkbox"
+                            id="smartLighting"
+                        >
+
+                        <span>
+                            💡
+                            <strong>Smart Lighting</strong>
+                            <small>Automated lighting</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-card">
+
+                        <input
+                            type="checkbox"
+                            id="security"
+                        >
+
+                        <span>
+                            🔐
+                            <strong>Security</strong>
+                            <small>Smart security features</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-card">
+
+                        <input
+                            type="checkbox"
+                            id="rainwater"
+                        >
+
+                        <span>
+                            💧
+                            <strong>Rainwater Harvesting</strong>
+                            <small>Water conservation</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-card">
+
+                        <input
+                            type="checkbox"
+                            id="energy"
+                        >
+
+                        <span>
+                            ⚡
+                            <strong>Energy Monitoring</strong>
+                            <small>Energy usage tracking</small>
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="other">
+                        Other Preferences
+                    </label>
+
+                    <textarea
+                        id="other"
+                        rows="4"
+                        placeholder="Enter any additional requirements..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FORM BUTTONS -->
+
+        <div class="form-actions">
+
+            <button
+                type="button"
+                class="secondary-btn"
+                id="prevStepBtn"
+            >
+                ← Previous
+            </button>
+
+
+            <div class="form-actions-right">
+
+                <button
+                    type="button"
+                    class="outline-btn"
+                    id="saveDraftBtn"
+                >
+                    Save Draft
+                </button>
+
+                <button
+                    type="button"
+                    class="primary-btn"
+                    id="nextStepBtn"
+                >
+                    Next →
+                </button>
+
+                <button
+                    type="button"
+                    class="primary-btn hidden"
+                    id="generateBtn"
+                >
+                    Generate Plan ✨
+                </button>
+
+            </div>
+
+        </div>
+
+    </form>
+
+
+    <!-- GENERATION -->
+
+    <div
+        class="generation-section hidden"
+        id="generationSection"
+    >
+
+        <div class="generation-card">
+
+            <div class="generation-icon">
+                ✨
+            </div>
+
+            <h3>Generating Your Preliminary Plan</h3>
+
+            <p id="generationMessage">
+                Preparing analysis...
+            </p>
+
+
+            <div class="generation-progress">
+
+                <div
+                    class="progress-bar"
+                    id="generationProgress"
+                ></div>
+
+            </div>
+
+
+            <div class="generation-steps">
+
+                <div id="g1">
+                    <span>✓</span>
+                    Collecting Requirements
+                </div>
+
+                <div id="g2">
+                    <span>✓</span>
+                    Analyzing Site
+                </div>
+
+                <div id="g3">
+                    <span>✓</span>
+                    Analyzing Building
+                </div>
+
+                <div id="g4">
+                    <span>●</span>
+                    Generating Blueprint
+                </div>
+
+                <div id="g5">
+                    <span>○</span>
+                    Preparing Results
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BLUEPRINT
+========================= -->
+
+<section class="section blueprint-section" id="blueprint">
+
+    <div class="section-heading reveal">
+
+        <span class="section-label">BLUEPRINT VISUALIZATION</span>
+
+        <h2>
+            Preliminary
+            <span>2D blueprint</span>
+        </h2>
+
+        <p>
+            A visual representation generated from your planning inputs.
+        </p>
+
+    </div>
+
+
+    <div class="blueprint-workspace">
+
+        <div class="blueprint-toolbar">
+
+            <div class="view-buttons">
+
+                <button
+                    class="view-btn active"
+                    id="planViewBtn"
+                >
+                    2D Plan
+                </button>
+
+                <button
+                    class="view-btn"
+                    id="siteViewBtn"
+                >
+                    Site View
+                </button>
+
+                <button
+                    class="view-btn"
+                    id="dimensionViewBtn"
+                >
+                    Dimensions
+                </button>
+
+            </div>
+
+
+            <div class="zoom-controls">
+
+                <button id="zoomOutBtn">−</button>
+
+                <span id="zoomValue">
+                    100%
+                </span>
+
+                <button id="zoomInBtn">+</button>
+
+                <button id="fullscreenBtn">
+                    ⛶
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="blueprint-canvas-wrap"
+            id="blueprintCanvasWrap"
+        >
+
+            <div
+                class="blueprint-empty"
+                id="blueprintEmpty"
+            >
+
+                <div class="empty-icon">
+                    📐
+                </div>
+
+                <h3>No Blueprint Generated</h3>
+
+                <p>
+                    Complete the planning form to generate your preliminary
+                    building layout.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    id="emptyStartBtn"
+                >
+                    Start Planning
+                </button>
+
+            </div>
+
+
+            <div
+                class="svg-container"
+                id="svgBlueprint"
+            ></div>
+
+        </div>
+
+
+        <div class="blueprint-summary">
+
+            <div>
+                <span>Project</span>
+                <strong id="bpProject">—</strong>
+            </div>
+
+            <div>
+                <span>Plot Area</span>
+                <strong id="bpPlot">—</strong>
+            </div>
+
+            <div>
+                <span>Footprint</span>
+                <strong id="bpFootprint">—</strong>
+            </div>
+
+            <div>
+                <span>Open Area</span>
+                <strong id="bpOpen">—</strong>
+            </div>
+
+        </div>
+
+
+        <div class="blueprint-actions">
+
+            <button
+                class="primary-btn"
+                id="saveProjectBtn"
+            >
+                Save Project to MySQL
+            </button>
+
+            <button
+                class="outline-btn"
+                id="regenerateBtn"
+            >
+                Regenerate
+            </button>
+
+            <button
+                class="outline-btn"
+                id="modifyInputsBtn"
+            >
+                Modify Inputs
+            </button>
+
+            <button
+                class="outline-btn"
+                id="downloadSvgBtn"
+            >
+                Download SVG
+            </button>
+
+            <button
+                class="outline-btn"
+                id="downloadJsonBtn"
+            >
+                Export JSON
+            </button>
+
+            <button
+                class="primary-btn"
+                id="printBtn"
+            >
+                Print Plan
+            </button>
+
+        </div>
+
+
+        <div class="disclaimer">
+
+            <strong>Preliminary visualization:</strong>
+            This blueprint is generated for academic/prototype planning only
+            and must not be treated as a professional architectural,
+            structural or approval drawing.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DASHBOARD
+========================= -->
+
+<section class="section dashboard-section" id="dashboard">
+
+    <div class="section-heading reveal">
+
+        <span class="section-label">ANALYSIS DASHBOARD</span>
+
+        <h2>
+            Project
+            <span>overview</span>
+        </h2>
+
+    </div>
+
+
+    <div
+        class="dashboard-empty"
+        id="dashboardEmpty"
+    >
+
+        <div class="empty-icon">
+            📊
+        </div>
+
+        <h3>No Analysis Available</h3>
+
+        <p>
+            Generate a plan to view site analysis, area distribution,
+            budget estimation and recommendations.
+        </p>
+
+    </div>
+
+
+    <div
+        class="dashboard-content hidden"
+        id="dashboardContent"
+    >
+
+        <!-- METRICS -->
+
+        <div class="metric-grid">
+
+            <div class="metric-card">
+
+                <span>Plot Area</span>
+                <strong id="metricPlot">0</strong>
+                <small>sq.ft</small>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>Ground Footprint</span>
+                <strong id="metricFootprint">0</strong>
+                <small>sq.ft</small>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>Open Area</span>
+                <strong id="metricOpen">0</strong>
+                <small>sq.ft</small>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>Total Built-up</span>
+                <strong id="metricBuilt">0</strong>
+                <small>sq.ft</small>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>Coverage</span>
+                <strong id="metricCoverage">0%</strong>
+                <small>ground coverage</small>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>Floors</span>
+                <strong id="metricFloors">0</strong>
+                <small>levels</small>
+
+            </div>
+
+        </div>
+
+
+        <!-- ANALYSIS -->
+
+        <div class="dashboard-grid">
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-header">
+
+                    <h3>Site Analysis</h3>
+
+                    <span class="card-tag">
+                        RULE BASED
+                    </span>
+
+                </div>
+
+                <div
+                    class="analysis-list"
+                    id="siteAnalysisList"
+                ></div>
+
+            </div>
+
+
+            <div class="dashboard-card budget-card">
+
+                <div class="dashboard-card-header">
+
+                    <h3>Budget Estimation</h3>
+
+                    <span class="card-tag">
+                        ESTIMATE
+                    </span>
+
+                </div>
+
+
+                <div class="estimated-cost">
+
+                    <span>Estimated Construction Cost</span>
+
+                    <strong id="estimatedCost">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="budget-status">
+
+                    <span id="budgetStatus">
+                        —
+                    </span>
+
+                </div>
+
+
+                <div class="budget-bar">
+
+                    <div
+                        id="budgetBar"
+                        class="budget-bar-fill"
+                    ></div>
+
+                </div>
+
+
+                <div
+                    class="budget-breakdown"
+                    id="budgetBreakdown"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHARTS -->
+
+        <div class="chart-grid">
+
+            <div class="chart-card">
+
+                <h3>Area Distribution</h3>
+
+                <div
+                    class="chart"
+                    id="areaChart"
+                ></div>
+
+            </div>
+
+
+            <div class="chart-card">
+
+                <h3>Space Allocation</h3>
+
+                <div
+                    class="chart"
+                    id="spaceChart"
+                ></div>
+
+            </div>
+
+
+            <div class="chart-card">
+
+                <h3>Budget Distribution</h3>
+
+                <div
+                    class="chart"
+                    id="budgetChart"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RECOMMENDATIONS -->
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-card-header">
+
+                <h3>Recommendations</h3>
+
+                <span class="card-tag">
+                    SBPBS ENGINE
+                </span>
+
+            </div>
+
+            <div
+                class="recommendations"
+                id="recommendations"
+            ></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MY PROJECTS
+========================= -->
+
+<section class="section projects-section" id="projects">
+
+    <div class="section-heading reveal">
+
+        <span class="section-label">PROJECT MANAGEMENT</span>
+
+        <h2>
+            My
+            <span>Projects</span>
+        </h2>
+
+    </div>
+
+
+    <div class="projects-toolbar">
+
+        <input
+            type="search"
+            id="projectSearch"
+            placeholder="Search projects..."
+        >
+
+        <button
+            class="primary-btn"
+            id="newProjectBtn"
+        >
+            + New Project
+        </button>
+
+    </div>
+
+
+    <div
+        class="projects-list"
+        id="projectsList"
+    ></div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     AUTH MODAL
+========================= -->
+
+<div
+    class="modal hidden"
+    id="authModal"
+>
+
+    <div
+        class="modal-backdrop"
+        id="modalBackdrop"
+    ></div>
+
+
+    <div class="auth-modal">
+
+        <button
+            class="modal-close"
+            id="closeAuthBtn"
+        >
+            ×
+        </button>
+
+
+        <div class="auth-header">
+
+            <div class="auth-logo">
+                SBPBS
+            </div>
+
+            <h2 id="authTitle">
+                Welcome Back
+            </h2>
+
+            <p id="authSubtitle">
+                Login to access your projects.
+            </p>
+
+        </div>
+
+
+        <form id="authForm">
+
+            <div class="input-group">
+
+                <label for="authEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="authEmail"
+                    required
+                    placeholder="you@example.com"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="authPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="authPassword"
+                    required
+                    placeholder="••••••••"
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="primary-btn full-btn"
+                id="authSubmit"
+            >
+                Login
+            </button>
+
+        </form>
+
+
+        <button
+            class="text-btn"
+            id="forgotBtn"
+        >
+            Forgot Password?
+        </button>
+
+
+        <div class="auth-switch">
+
+            <span id="authSwitch">
+                Don't have an account?
+            </span>
+
+            <button id="switchAuthBtn">
+                Register
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     TOAST
+========================= -->
+
+<div
+    class="toast"
+    id="toast"
+>
+    <span id="toastMessage">
+        Done
+    </span>
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <div class="footer-logo">
+                SBPBS
+            </div>
+
+            <p>
+                Smart Building Planning & Blueprint Suggestion System
+            </p>
+
+        </div>
+
+
+        <div class="footer-tech">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 SBPBS. Academic Software Engineering Project.
+        </p>
+
+        <p>
+            Preliminary visualization only • Professional verification required.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

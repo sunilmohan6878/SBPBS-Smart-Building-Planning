@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+actor "Project User" as User
+rectangle "SBPBS" {
+ usecase "Enter Project Details" as UC1
+ usecase "Enter Site Conditions" as UC2
+ usecase "Specify Building Requirements" as UC3
+ usecase "Select Preferences" as UC4
+ usecase "Analyze Site & Building" as UC5
+ usecase "View Recommendations" as UC6
+ usecase "Generate 2D Preliminary Blueprint" as UC7
+ usecase "View Dashboard & Cost Estimate" as UC8
+ usecase "Save Project" as UC9
+ usecase "View/Search Saved Projects" as UC10
+ usecase "Delete Saved Project" as UC11
+ usecase "Export/Print Results" as UC12
+}
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC7
+User --> UC8
+User --> UC9
+User --> UC10
+User --> UC11
+User --> UC12
+UC7 .> UC5 : <<include>>
+UC5 .> UC6 : <<include>>
+UC5 .> UC8 : <<include>>
+@enduml
